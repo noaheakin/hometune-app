@@ -1,0 +1,2 @@
+class VenueCommentsController < ApplicationController
+end

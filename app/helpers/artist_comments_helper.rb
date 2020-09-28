@@ -1,0 +1,2 @@
+module ArtistCommentsHelper
+end

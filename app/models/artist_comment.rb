@@ -1,0 +1,2 @@
+class ArtistComment < ApplicationRecord
+end

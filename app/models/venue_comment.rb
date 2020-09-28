@@ -1,0 +1,2 @@
+class VenueComment < ApplicationRecord
+end
