@@ -1,5 +1,5 @@
 class ArtistCommentsController < ApplicationController
-    before_action :set_artist_comment, only: [:show]
+    before_action :get_artist_comment, only: [:show]
 
     def index
         @artist_comments = ArtistComment.all
@@ -22,7 +22,7 @@ class ArtistCommentsController < ApplicationController
         params.require(:artist_comment).permit(:user_id, :artist_id, :content)
     end
 
-    def set_artist_comment
+    def get_artist_comment
         @artist_comment = ArtistComment.find(params[:id])
     end
 end
