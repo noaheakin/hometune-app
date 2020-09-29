@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 2020_09_28_185000) do
     t.string "genre"
     t.text "bio"
     t.integer "popularity"
+    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -33,6 +34,7 @@ ActiveRecord::Schema.define(version: 2020_09_28_185000) do
     t.integer "artist_id"
     t.integer "venue_id"
     t.datetime "date"
+    t.boolean "twenty_one_and_up"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -54,10 +56,11 @@ ActiveRecord::Schema.define(version: 2020_09_28_185000) do
 
   create_table "venues", force: :cascade do |t|
     t.string "name"
+    t.text "description"
     t.string "location"
     t.integer "capacity"
-    t.boolean "twenty_one_and_up"
     t.integer "popularity"
+    t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

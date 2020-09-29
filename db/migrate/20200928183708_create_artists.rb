@@ -5,6 +5,7 @@ class CreateArtists < ActiveRecord::Migration[6.0]
       t.string :genre
       t.text :bio
       t.integer :popularity
+      t.string :img_url
 
       t.timestamps
     end
