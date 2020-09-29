@@ -42,6 +42,27 @@ chop_suey = Venue.create(name: "Chop Suey", description: "Following an ownership
 sea_monster_lounge = Venue.create(name: "Sea Monster Lounge", description: "The Sea Monster Lounge is dark and blue-green, but not aggressively so; this dark blue-greenness is accomplished simply with strands of Christmas lights of deep oceanic hues. The overall effect: both convivial and a bit foreboding, as every bar should be. Every night brings a different crew of jazz musicians to entertain, and on the weekends there's a jazz brunch.", location: "Wallingford", capacity: 74, popularity: 3, img_url: "https://i.ytimg.com/vi/kfnKIaqCxNA/maxresdefault.jpg")
 el_corazon = Venue.create(name: "El Corazon", description: "Focused on hardcore, punk, screamo, and metal, El Corazon has a show nearly every single night. Also, Brian Foss has resurrected his beloved punk dive Funhouse in a second room, which features more 'intimate' head-banging bills.", location: "Eastlake", capacity: 800, popularity: 6, img_url: "https://www.thepier.org/wp-content/uploads/2014/11/11.12.2014-ThePier-ElCorazon015.jpg")
 
+vc1 = VenueComment.create(user_id: User.all.sample.id, venue_id: neumos.id, content: "I love the atmosphere here")
+vc2 = VenueComment.create(user_id: u6.id, venue_id: tractor_tavern.id, content: "I love the country music here. Good beer with good people.")
+vc3 = VenueComment.create(user_id: User.all.sample.id, venue_id: sunset_tavern.id, content: "Dinner and a show!")
+vc4 = VenueComment.create(user_id: User.all.sample.id, venue_id: blue_moon_tavern.id, content: "Constant live shows coming in and out of here. Never know what to expect.")
+vc5 = VenueComment.create(user_id: User.all.sample.id, venue_id: showbox_downtown.id, content: "Everywhere has a great view of the stage.")
+vc6 = VenueComment.create(user_id: User.all.sample.id, venue_id: showbox_sodo.id, content: "This place is huge!!!")
+vc7 = VenueComment.create(user_id: User.all.sample.id, venue_id: clockout_lounge.id, content: "A bit small but is in a fun community")
+vc8 = VenueComment.create(user_id: User.all.sample.id, venue_id: paramount.id, content: "This place is ginourmous! All the big names play here when they are in town")
+vc9 = VenueComment.create(user_id: User.all.sample.id, venue_id: neptune.id, content: "a fun renovated theater right in the heart of UW")
+vc10 = VenueComment.create(user_id: User.all.sample.id, venue_id: moore.id, content: "This is old theater is a great piece of architecture")
+vc11 = VenueComment.create(user_id: User.all.sample.id, venue_id: crocodile.id, content: "I understand why it is one of Seattle's favorite music venues")
+vc12 = VenueComment.create(user_id: User.all.sample.id, venue_id: substation.id, content: "very underground vibe")
+vc13 = VenueComment.create(user_id: User.all.sample.id, venue_id: nectar_lounge.id, content: "Fun enviornment with a wide vaariety of music")
+vc14 = VenueComment.create(user_id: User.all.sample.id, venue_id: royal_room.id, content: "The Royal Room has a lot of artists with thoughtful music come through")
+vc15 = VenueComment.create(user_id: u10.id, venue_id: wamu_theater.id, content: "This venue is always a party!!!")
+vc16 = VenueComment.create(user_id: User.all.sample.id, venue_id: key_arena.id, content: "This place is ridiculously massive. Have to get there early or you will be stuck behind a sea of people")
+vc17 = VenueComment.create(user_id: User.all.sample.id, venue_id: barboza.id, content: "Barboza is an underground, exciting party underneath Neumos")
+vc18 = VenueComment.create(user_id: User.all.sample.id, venue_id: chop_suey.id, content: "The decor is something to get used to but the talent that comes through is amazing.")
+vc19 = VenueComment.create(user_id: User.all.sample.id, venue_id: sea_monster_lounge.id, content: "The swanky jazz vibe in here is very fun. The name is fitting.")
+vc20 = VenueComment.create(user_id: User.all.sample.id, venue_id: el_corazon.id, content: "The place seems pretty cool but they really only have hardcore music. That ain't me.")
+
 # Hip-hop:
 # Shabazz Palaces
 # Macklemore
