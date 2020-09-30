@@ -6,7 +6,7 @@
 <img src=<%= @artist.img_url %>><br><br>
 <h3>Upcoming Shows:</h3>
 <% @artist.concerts.each do |concert| %>
-    <div>@ <%= concert.venue.name %></div>
+    <div>@ <%= link_to concert.venue.name, venue_path(concert.venue) %></div>
     <div><%= concert.display_date %></div><br>
 <%end%>
 <h4>Comments:</h4>
