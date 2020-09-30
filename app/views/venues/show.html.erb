@@ -5,7 +5,11 @@
 <h4>Capacity: <%= @venue.capacity %></h4>
 <h4>Popularity: <%= @venue.popularity %></h4>
 <img src=<%= @venue.img_url %>alt=<%=@venue.name%> + "interior"><br><br>
-
+<h3>Upcoming Shows:</h3>
+<% @venue.concerts.each do |concert| %>
+    <div>@ <%= link_to concert.artist.name, artist_path(concert.artist) %></div>
+    <div><%= concert.display_date %></div><br>
+<%end%>
 
 <% @venue.most_recent_comments.each do |comment| %>
     <div><%= comment.user.name %></div>
