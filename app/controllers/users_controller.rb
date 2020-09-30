@@ -1,15 +1,23 @@
 class UsersController < ApplicationController
+    skip_before_action :fetch_user, only:[:new, :create]
     before_action :get_user, only: [:show, :edit, :update, :destroy]
 
     def show
     end
 
     def new
-        @artist_comment = ArtistComment.new
+        @user = User.new
     end
 
     def create
-        @artist_comment = ArtistComment.create(artist_comment_params)
+        @user = User.create(user_params)
+        if @user.valid?
+            session[:user_id] = @user.id
+            #MAKE HOMEPAGE!!!!!!!
+            redirect_to homepage_path
+        else 
+            redirect_to new_user_path
+        end
     end
 
     def edit
@@ -28,7 +36,7 @@ class UsersController < ApplicationController
     private
 
     def user_params
-        params.require(:user).permit(:name, :genre, :bio, :popularity)
+        params.require(:user).permit(:username, :password, :bio)
     end
 
     def get_user
