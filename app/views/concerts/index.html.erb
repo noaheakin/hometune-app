@@ -1,8 +1,7 @@
 <h1>Concerts</h1>
 
 <% @concerts.each do |concert| %>
-    <h4><%= link_to "For more information", concert_path(concert) %></h4>
-    <h2><%= link_to concert.artist.name, artist_path(concert) %></h2>
-    <h2><%= link_to concert.venue.name, venue_path(concert) %></h2>
+    <h4><%= link_to "<%=concert.artist.name%> at <%=concert.venue.name%>", concert_path(concert) %></h4>
+    <h2><%= concert.display_date %></h2>
 <% end %>
     
