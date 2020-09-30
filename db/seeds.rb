@@ -66,6 +66,10 @@ vc18 = VenueComment.create(user_id: User.all.sample.id, venue_id: chop_suey.id, 
 vc19 = VenueComment.create(user_id: User.all.sample.id, venue_id: sea_monster_lounge.id, content: "The swanky jazz vibe in here is very fun. The name is fitting.")
 vc20 = VenueComment.create(user_id: User.all.sample.id, venue_id: el_corazon.id, content: "The place seems pretty cool but they really only have hardcore music. That ain't me.")
 
+vc21 = VenueComment.create(user_id: User.all.sample.id, venue_id: neumos.id, content: "The place seems pretty cool but not the place for me")
+vc22 = VenueComment.create(user_id: User.all.sample.id, venue_id: neumos.id, content: "My favorite place to watch live music")
+vc23 = VenueComment.create(user_id: User.all.sample.id, venue_id: neptune.id, content: "Cool name but not as coll of a venue")
+
 # Hip-hop:
 # Shabazz Palaces
 # Macklemore

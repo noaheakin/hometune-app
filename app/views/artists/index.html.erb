@@ -1,0 +1,10 @@
+<h1>Artists</h1>
+
+<% @artists.each do |artist| %>
+    <h2><%= link_to artist.name, artist %></h2>
+    <h4>Genre: <%= artist.genre %></h4>
+    <div class="image_container">
+        <img src=<%= artist.img_url %>><br><br>
+    </div>
+<% end %>
+    

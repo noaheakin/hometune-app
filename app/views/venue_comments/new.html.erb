@@ -1,0 +1,8 @@
+<h1>New comment on a venue</h1>
+<%= form_for @venue_comment do |f| %>
+    <%= f.collection_select :venue_id, @venues, :id, :name%>
+    <%= f.label :content%>
+    <%= f.text_field :content%>
+    <%= f.submit %>
+
+<%end%>

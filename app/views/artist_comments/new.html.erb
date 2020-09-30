@@ -1,0 +1,8 @@
+<h1>New comment on an artist</h1>
+<%= form_for @artist_comment do |f| %>
+    <%= f.collection_select :artist_id, @artists, :id, :name%>
+    <%= f.label :content%>
+    <%= f.text_field :content%>
+    <%= f.submit %>
+
+<%end%>
