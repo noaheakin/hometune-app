@@ -5,6 +5,11 @@ class Artist < ApplicationRecord
     has_many :concerts
     has_many :venues, through: :concerts
 
+    # shows artist comments sorted by most recent
+    def most_recent_comments
+        self.artist_comments.reverse
+    end
+
     # alphabetizes the artists
     def self.alphabetized
         self.all.sort_by(&:name)
