@@ -1,4 +1,7 @@
 require 'faker'
+User.destroy_all
+Venue.destroy_all
+VenueComment.destroy_all
 
 u1 =  User.create(name: Faker::Name.name, bio: "I hope to find some great rock shows on here. I am new to the area and hoping to find some great shows and friends to go with nearby")
 u2 =  User.create(name: Faker::Name.name, bio: "I only have a bio because I needed one to make a profile and comment on my favorite artists")
