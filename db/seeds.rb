@@ -71,55 +71,59 @@ vc22 = VenueComment.create(user_id: User.all.sample.id, venue_id: neumos.id, con
 vc23 = VenueComment.create(user_id: User.all.sample.id, venue_id: neptune.id, content: "Cool name but not as coll of a venue")
 
 # Hip-hop:
-# Shabazz Palaces
-# Macklemore
-# Travis Thompson 
-# Blue Scholars
-# Sir Mix-A-Lot 
-# Sol 
-# Gifted Gab
-# Brothers From Another
-# DoNormaal
-# Dave B
+shabazz_palaces = Artist.create(name: "Shabazz Palaces", genre: "Hip-Hop", bio: "Afrofuturist duo characterized by African percussion and jazz overtones as well as abstract samples pulled from podcasts and mixtapes.", popularity: 6, img_url: "https://i.guim.co.uk/img/media/1c307c68dc10005fb2ad1762fcec135d4465e93b/0_19_1800_1080/master/1800.jpg?width=1200&quality=85&auto=format&fit=max&s=21c9e685450d5b974aab2ca7a16dc5e9")
+macklemore = Artist.create(name: "Macklemore & Ryan Lewis", genre: "Hip-Hop", bio: "Hip-hop duo with numerous chart-topping singles to their name, their music addresses both lighter material like partying or shopping for second-hand clothes as well as heavier issues like drug addiction and homophobia.", popularity: 9, img_url: "https://a.abcnews.go.com/images/Entertainment/gty_ryan_lewis_macklemore_ll_130607_wmain.jpg") 
+travis_thompson = Artist.create(name: "Travis Thompson", genre: "Hip-Hop", bio: "A young rapper who first gained publicity under Macklemore's tutelage, his indigenous identity informs his buoyant, bold music.", popularity: 7, img_url: "https://uproxx.com/wp-content/uploads/2019/09/travis-thompson-pub-shot3-jpg.jpeg?w=1024&h=576&crop=1")
+blue_scholars = Artist.create(name: "Blue Scholars", genre: "Hip-Hop", bio: "The Blue Scholars helped lead the charge in proclaiming the Pacific Northwest as a breeding ground for 'true school' hip-hop, perceiving themselves as blue-collar intellectuals.", popularity: 7, img_url: "https://archive.dailycal.org/photos/109081-blue-01.jpg")
+sir-mix-a-lot = Artist.create(name: "Sir Mix-a-Lot", genre: "Hip-Hop", bio: "The rapper who arguably put seattle on the hip-hop map with several career-defining tracks that are recongnizable even after decades in the game", popularity: 9, img_url: "https://media.npr.org/assets/img/2017/05/08/gettyimages-579356380_wide-45132ad8d6291b459fbca387abc77ffdbc8305eb.jpg?s=1400")
+sol = Artist.create(name: "Sol", genre: "Hip-Hop", bio: "Haitian-American hip-hop artist whose bright melodies and hooks perfectly compliment his sing-rap delivery.", popularity: 6, img_url: "https://crosscut.com/sites/default/files/styles/max_2000x2000/public/images/articles/sol_crosscut_0.jpg?itok=avbLA2Kw")
+gifted_gab = Artist.create(name: "Gifted Gab", genre: "Hip-Hop", bio: "A female MC who has the ability to create complex verses with variety in her sound, ranging from smooth melodies to strong lyrics. The witty wordsmith finds inspiration in the lyrical genius of artists such and Queen Latifah, MC Lyte, and Tupac.", popularity: 6, img_url: "https://www.weouthere.net/wp-content/uploads/2015/07/gab.jpg")
+brothers_from_another = Artist.create(name: "Brothers From Another", genre: "Hip-Hop", bio: "Three childhood friends comprise this hip-hop crew, the bravado of youth is on full display with their boastful lyrics and hard-partying lifestyle.", popularity: 4, img_url: "https://media1.fdncms.com/stranger/imager/u/original/23847401/music2-570.jpg")
+donormaal = Artist.create(name: "DoNormaal", genre: "Hip-Hop", bio: "An MC who has generated much buzz with her mesmerizing and original style of rapping, utilizing dense rhyme patterns that often navigate unusual emotional space for a hip-hop artist.", popularity: 5, img_url: "https://media1.fdncms.com/stranger/imager/u/original/23845871/phil-570.jpg")
+dave_b = Artist.create(name: "Dave B.", genre: "Hip-Hop", bio: "A multi-talented rapper, singer, writer, and producer whose sound blends elements of hip-hop, R&B, jazz, and funk with conscious-driven lyrics, soulful melodies, and memorable production.", popularity: 3, img_url: "https://static.seattletimes.com/wp-content/uploads/2018/01/8ebd8044-ffa1-11e7-b3ab-75f9c0f581ba-780x501.jpg")
 
 # Rock:
-# Tres Leches
-# Foo Fighters
-# Band of Horses
-# Pedro the Lion
-# Pickwick
-# Tacocat
-# The Black Tones
-# Tangerine
-# Pearl Jam
-# Chastity Belt
-# Modest Mouse 
-# Soundgarden
-# Heart
-# Death Cab for Cutie
+tres_leches = Artist.create (name: "Tres Leches", genre: "Rock", bio: "An energetic trio whose style and genres shift as frequently as its members swap instruments, an engaging live show.", popularity: 4, img_url: "https://res.cloudinary.com/sagacity/image/upload/c_crop,h_640,w_960,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/Tres_Leches_g0ac7s.jpg")
+foo_fighters = Artist.create(name: "Foo Fighters", genre: "Rock", bio: "Modern rock anchored by a love of classic guitar rock, their sound is build upon the heavy, melodic, loud-quiet-loud template of bands like The Pixies and Nirvana.", popularity: 8, img_url: "https://consequenceofsound.net/wp-content/uploads/2019/10/Foo-Fighters.jpg?quality=80&w=700")
+band_of_horses = Artist.create(name: "Band of Horses", genre: "Rock", bio: "A blend of woodsy uptempo rock and reverb-laden vocals, Band of Horses gained an audience in their native Northwest before their album Everything All the Time made them indie rock darlings.", popularity: 6, img_url: "https://consequenceofsound.net/wp-content/uploads/2016/06/ben-kaye-band-of-horses-1.jpg?quality=80")
+pedro_the_lion = Artist.create(name: "Pedro the Lion", genre: "Rock", bio: "After over two decades working on other projects, lead songwriter David Bazan returns to the band that originally put him on the map.", popularity: 4, img_url: "https://media.npr.org/assets/img/2019/05/10/pedro-the-lion-2-credit-ryan-russell_wide-e6bcc828ffbb2fc7148548fa5811be292045b361.jpg?s=1400")
+pickwick = Artist.create(name: "Pickwick", genre: "Rock", bio: "A quintent that splices soul into their stylized indie rock resulting in a blend of groove and pop savvy.", popularity: 2, img_url: "https://www.seattleweekly.com/wp-content/uploads/2017/06/web1_170607-SEA-CUlt-Music.jpg")
+tacocat = Artist.create(name: "Tacocat", genre: "Rock", bio: "Their lyrical honesty, humor, and hit-making sensibilities have built the band a fiercely devoted fanbase.", popularity: 5, img_url: "https://hardlyart-production-image.s3.amazonaws.com/asset/artist_images/attachments/000/000/101/cropped_620_415/tacocat2.jpg?1459902907")
+the_black_tones = Artist.create(name: "The Black Tones", genre: "Rock", bio: "This twin duo has described their brand of punk-blues as Cobain meets cornbread. Their music evokes Southern influences in the grey of the Northwest.", popularity: 5, img_url: "https://hardlyart-production-image.s3.amazonaws.com/asset/artist_images/attachments/000/000/101/cropped_620_415/tacocat2.jpg?1459902907")
+tangerine = Artist.create(name: "Tangerine", genre: "Rock", bio: "A trio known for fusing 60's inspired west coast pop with a twinge of R&B.", popularity: 3, img_url: "http://www.mtv.com/news/wp-content/uploads/buzz/2014/03/tangerine.jpg")
+pearl_jam = Artist.create(name: "Pearl Jam", genre: "Rock", bio: "Pearl Jam have stood the test of time, emerging from the legions of grungy alt-rockers littering the early 1990s thanks in large part to frontman Eddie Vedder whose uncommon charisma and passion helped the group's arena rock moves seem intimate.", popularity: 9, img_url: "https://globalnews.ca/wp-content/uploads/2020/03/14346-1s4a8674.jpg?quality=85&strip=all&w=1200")
+chastity_belt = Artist.create(name: "Chastity Belt", genre: "Rock", bio: "Taking cues from both the politics of the riot grrrl scene and the intricate, moody guitar-based sound of early-'90s Pacific Northwest indie bands like Sleater-Kinney and Autoclave, Chastity Belt balance smart, edgy music against lyrics often filled with goofball wit and feminist satire.", popularity: 5, img_url: "https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2015/5/11/1431347332705/37171d81-7e5b-43e1-9612-effd109ea7d3-1020x612.jpeg?width=700&quality=85&auto=format&fit=max&s=f403d237fee4520b4c561fd6ba32704d")
+modest_mouse = Artist.create(name: "Modest Mouse", genre: "Rock", bio: "One of the few bands capable of treading the narrow path where massive popularity is possible without sacrificing longtime fans.", popularity: 9, img_url: "https://www.americansongwriter.com/wp-content/uploads/2013/06/modest_mouse_b.jpg") 
+soundgarden = Artist.create(name: "Soundgarden", genre: "Rock", bio: "Helped to popularize metal within alternative rock, melding the slow grind of Black Sabbath and cinematic scope of Led Zeppelin with the D.I.Y. aesthetics of punk.", popularity: 8, img_url: "https://www.udiscovermusic.com/wp-content/uploads/2019/05/Soundgarden-King-Animal-press-shot-01-web-optimised-1000.jpg")
+heart = Artist.create(name: "Heart", genre: "Rock", bio: "Fronted by legendary sisters Ann and Nancy Wilson, Heart essentially pioneered the female-led rock band and have been an influential force for four decades and counting.", popularity: 8, img_url: "https://philly.metro.us/wp-content/uploads/2018/08/heart-band-reunion-ann-nancy-wilson.jpg")
+death_cab_for_cutie = Artist.create(name: "Death Cab for Cutie", genre: "Rock", bio: "Combined sensitive songwriting, memorable melodies, and the rich, wistful vocal tone of leader Ben Gibbard to rise from a low-key solo project to one of the definitive indie bands of the 2000s and 2010s.", popularity: 7, img_url: "https://data.junkee.com/wp-content/uploads/2019/03/41971899_10156588416556678_3395882670733918208_o1.jpg")
 
 # Punk/Metal:
-# Bell Witch
-# Queensryche
-# Monsterwatch
-# Fastbacks
-# Alice in Chains
-# Sandrider
-# Endorphins Lost
-# Great Falls
-# Post/Boredom
-# Pisswand
+bell_witch = Artist.create(name: "Bell Witch", genre: "Punk/Metal", bio: "A doom metal band that notably do without a guitarist.", popularity: 6, img_url: "https://www.revolvermag.com/sites/default/files/styles/image_750_x_420/public/media/images/article/bell-witch-band_2_0.jpg?itok=pX01hGUG&timestamp=1544482114")
+queensryche = Artist.create(name: "Queensryche", genre: "Punk/Metal", bio: "While they dominated rock radio in the 90's with a string of hits, their influence on rock and progressive bands like Dream Theater and Nevermore continues on today.", popularity: 7, img_url: "https://static.billboard.com/files/stylus/2499059-queensryche-new-617-409-compressed.jpg")
+monsterwatch = Artist.create(name: "Monsterwatch", genre: "Punk/Metal", bio: "Monsterwatch recontextualizes the sound Seattle first became famous for and injects it with new youthful energy.", popularity: 6, img_url: "https://www.kexp.org/media/filer_public_thumbnails/filer_public/01/c1/01c13398-5e04-45a4-a46a-fd47d06120f1/monsterwatch.jpg__800x500_q85_crop_subject_location-660%2C406_subsampling-2_upscale.jpg")
+fastbacks = Artist.create(name: "Fastbacks", genre: "Punk/Metal", bio: "One of the few first-wave punk bands who not only survived to the end of the century but did so with their original sound and focus intact, formed by three high school friends.", popularity: 7, img_url: "https://i2.wp.com/www.guerrillacandy.com/wp-content/uploads/2011/05/2592.jpg?fit=1251%2C722&ssl=1")
+alice_in_chains = Artist.create(name: "Alice in Chains", genre: "Punk/Metal", bio: "Epitomizes the solemn, heavy Seattle sound of the 1990s while standing apart from the grunge hordes partly because their roots lie in heavy metal rather than punk.", popularity: 8, img_url: "https://www.gannett-cdn.com/media/USATODAY/test/2013/07/23/1374616093000-130309-aic-237-4web-1307251139_16_9.jpg?width=660&height=374&fit=crop&format=pjpg&auto=webp")
+sandrider = Artist.create(name: "Sandrider", genre: "Punk/Metal", bio: "A grunge metal trio. their songs are more or less the aural equivalent of runaway bastard children of Soundgarden and Queens of the Stone Age reared on a diet of comic books, weed, and cheap beer. ", popularity: 7, img_url: "https://newnoisemagazine.com/wp-content/uploads/2014/03/Sandrider-band-2014.jpg")
+endorphins_lost = Artist.create(name: "Endorphins Lost", genre: "Punk/Metal", bio: "A loud, fast, and pissed off band that plays short, explosive songs.", popularity: 5, img_url: "https://www.nocleansinging.com/wp-content/uploads/2016/12/Endorphins-Lost-band-e1483025061198.jpg")
+great_falls = Artist.create(name: "Great Falls", genre: "Punk/Metal", bio: "Producers of abrasive metal/noise gold, not for the faint of heart.", popularity: 4, img_url: "https://media2.fdncms.com/stranger/imager/u/original/25522146/music-lead-570.jpg")
+post_boredom = Artist.create(name: "Post/Boredom", genre: "Punk/Metal", bio: "Dirtier than mud yet clearner than an angel, Post/Boredom is four friends who enjoy creating.", popularity: 3, img_url: "https://www.decibelmagazine.com/wp-content/uploads/2019/11/deciblog-post-boredom.jpg")
+pisswand = Artist.create(name: "Pisswand", genre: "Punk/Metal", bio: "The three piece band creates a fusion of heavy punk and metal that fit together seamlessly.", popularity: 1, img_url: "https://static.wixstatic.com/media/607c45_779d11fb86794fb6989cb0e3fe68dcd1~mv2.jpg/v1/fill/w_528,h_334,al_c,q_80,usm_0.66_1.00_0.01/607c45_779d11fb86794fb6989cb0e3fe68dcd1~mv2.webp")
 
 # Folk/Country:
-# Fleet Foxes
-# Damien Jurado
-# The Head and the Heart
-# The Cave Singers
-# Mount Eerie
-# Aaron Crawford
-# Brandi Carlile
-# Old Coast
-
+fleet_foxes = Artist.create(name: "Fleet Foxes", genre: "Folk/Country", bio: "Fleet Foxes fuse earthy, harmony-rich folk-rock with a sense of lush pop sophistication.", popularity: 8, img_url: "https://diy-magazine.s3.amazonaws.com/d/diy/Artists/F/Fleet-Foxes/Fleet-Foxes-press-2048x1365.jpg")
+damien_jurado = Artist.create(name: "Damien Jurado", genre: "Folk/Country", bio: "Known for his personal song-writing and contributions to TV show and movie soundtracks.", popularity: 5, img_url: "https://media.npr.org/assets/img/2011/09/21/damienjurado_wide-bb80a6148e92dec0501e4dcb0789b43ed8dda318.jpg?s=1400")
+the_head_and_the_heart = Artist.create(name: "The Head and the Heart", genre: "Folk/Country", bio: "An acclaimed indie folk band whose influences include Americana, country-rock, and classic Beatlesque pop.", popularity: 7, img_url: "https://bloximages.chicago2.vip.townnews.com/billingsgazette.com/content/tncms/assets/v3/editorial/7/c0/7c09b793-ede8-5786-a62c-ccd69e48f69f/5910bc384387d.image.jpg?crop=1711%2C1081%2C31%2C7&resize=1200%2C758&order=crop%2Cresize")
+the_cave_singers = Artist.create(name: "The Cave Singers", genre: "Folk/Country", bio: "Northwestern mystics, The Cave Singers play music for the soul.", popularity: 6, img_url: "https://ichef.bbci.co.uk/images/ic/960x540/p01bqtv8.jpg")
+mount_eerie = Artist.create(name: "Mount Eerie", genre: "Folk/Country", bio: "Songwriter/multi-instrumentalist/producer Phil Elverum expands on the searching, deeply personal feel of his work with the Microphones.", popularity: 3, img_url: "https://f4.bcbits.com/img/0009848828_0")
+aaron_crawford = Artist.create(name: "Aaron Crawford", genre: "Folk/Country", bio: "Staying firmly planted in the Northwest, Aaron Crawford is determined to let the world know that country music doesn't need to come from Nashville or Texas.", popularity: 4, img_url: "https://thumb.spokesman.com/DSEAvKxBOFvnba8FqGBaCVC-ATs=/2500x1405/smart/media.spokesman.com/photos/2019/10/10/AaronCrawford.jpg")
+brandi_carlile = Artist.create(name: "Brandi Carlile", genre: "Folk/Country", bio: "Beloved by fans and critics alike, Brandi Carlile has performed sold-out concerts across the globe.", popularity: 8, img_url: "https://townsquare.media/site/623/files/2020/01/brandi-carlile.jpg?w=980&q=75")
+old_coast = Artist.create(name: "Old Coast", genre: "Folk/Country", bio: "Melds a spirited and diverse mix of whiskey drinking desert songs with driving indie rhythms and hard working, old time harmonies.", popularity: 10, img_url: "https://www.northwestmusicscene.net/wp-content/uploads/2017/10/Old-Coast-800x450.jpg")
 
 # Pop/Electronic:
-# Navvi
+odesza = Artist.create(name: "Odesza", genre: "Pop/Electronic", bio: "A group that's gone from the basement to selling out large arenas, building their appeal through word of mouth and streaming plus a unique live show featuring an 11-piece ensemble that includes a horn section and a marching-band drumline.", popularity: 7, img_url: "https://www.edmtunes.com/wp-content/uploads/2018/10/180419-kirby-gladstein-photograpy-odesza-concert-fox-theater-pomona-6556.jpg")
+navvi = Artist.create(name: "NAVVI", genre: "Pop/Electronic", bio: "Electronic duo NAVVI carry an instantly magnetic presence with their confident take on brooding, propulsive, darkly-lit synth-pop.", popularity: 6, img_url: "https://c2.staticflickr.com/6/5489/31037565206_4939f22647.jpg")
+seven_lions = Artist.create(name: "Seven Lions", genre: "Pop/Electronic", bio: "Melding mainstream pop, trance, and dubstep, producer Jeff Montalvo quickly amassed a cult following under the alias Seven Lions.", popularity: 7, img_url: "https://edmidentity.com/wp-content/uploads/2019/03/Ivan-Meneses-for-Insomniac-Events-2-1.jpg")
+kj_sawka = Artist.create(name: "KJ Sawka", genre: "Pop/Electronic", bio: "One of the most illustrious and respected figures in the industry today, with a unique ability to push the boundaries of dance music and foster innovation in the scene.", popularity: 4, img_url: "https://www.dancemusicnw.com/wp-content/uploads/2014/07/kj-2.jpg")
+lophiile = Artist.create(name: "lophiile", genre: "Pop/Electronic", bio: "Known for bringing hip-hop energy into electro-funk and R&B, lophiile made a name for himself as a go-to producer for breaking artists.", popularity: 3, img_url: "https://img-dev.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F72463079%2F323240747537%2F1%2Foriginal.20190911-172512?auto=compress&fit=clip&h=&w=960&s=5429a5c437dc93bbbca3a2a6b3b2558c")
+must_die = Artist.create(name: "MUST DIE!", genre: "Pop/Electronic", bio: "Acting as a rebellious force and the main antagonist of bass music, there's no one like MUST DIE!", popularity: 1, img_url: "https://static.vibe.com/files/article_images/must-die-650x366.jpg")
