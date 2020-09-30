@@ -12,7 +12,7 @@
 <h4>Comments:</h4>
 
 <% @artist.most_recent_comments.each do |comment| %>
-    <div><%= comment.user.name %></div>
+    <div><%= comment.user.username %></div>
     <div class="comment_container"><%= comment.content %></div><br>
 <%end%>
 

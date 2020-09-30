@@ -9,7 +9,7 @@ class LoginController < ApplicationController
         if @user && @user.authenticate(params[:password])
             session[:user_id] = @user.id
             # need to make path/ may need to rename
-            redirect_to homepage_path
+            redirect_to hometune_path
         else
             redirect_to new_login_path
         end   

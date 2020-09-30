@@ -10,6 +10,14 @@
   </head>
 
   <body>
+  <% if @logged_in %>
+    Welcome, <%= @user.username %>!
+    <%= button_to "Log out", log_out_path, method: :delete%>
+    <%else%>
+    <%= link_to "Log in", new_login_path %>
+    <%= link_to "Create Profile", new_user_path %>
+  <%end%>
+
     <%= yield %>
   </body>
 </html>

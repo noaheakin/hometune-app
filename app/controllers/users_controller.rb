@@ -14,7 +14,7 @@ class UsersController < ApplicationController
         if @user.valid?
             session[:user_id] = @user.id
             #MAKE HOMEPAGE!!!!!!!
-            redirect_to homepage_path
+            redirect_to hometune_path
         else 
             redirect_to new_user_path
         end
@@ -25,7 +25,7 @@ class UsersController < ApplicationController
 
     def update
         @user.update(user_params)
-        redirect_to @user_path(@user)
+        redirect_to user_path(@user)
     end
 
     def destroy

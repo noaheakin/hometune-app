@@ -12,7 +12,7 @@
 <%end%>
 
 <% @venue.most_recent_comments.each do |comment| %>
-    <div><%= comment.user.name %></div>
+    <div><%= comment.user.username %></div>
     <div><%= comment.content %></div><br>
 <%end%>
 

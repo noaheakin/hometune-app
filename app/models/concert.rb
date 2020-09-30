@@ -6,4 +6,5 @@ class Concert < ApplicationRecord
     def display_date
         self.date.strftime("%A, %B %d, %Y - %I:%M %p")  
     end
+    #sort by venue, artist, popular artists, popular artists, date both ways, genre, location
 end
