@@ -1,0 +1,47 @@
+.homepage_container {
+    width: 100%;
+}
+
+.homepage_container h1 {
+    height: 300px;
+}
+
+.homepage_left {
+    background-image: url(https://www.nadamucho.com/wp-content/uploads/2018/06/Gifted-Gab-@-Sasquatch-2018-by-Maurice-Harnsberry-for-NadaMucho-1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0;
+    width: 30%;
+    float: left;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: none;
+}
+
+.homepage_center {
+    background-image: url(https://www.showboxpresents.com/assets/img/market-web-1-abca4d27e1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    float: left;
+    margin-left: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: none;
+}
+
+.homepage_right {
+    background-image: url(https://www.thecrocodile.com/files/2014/01/The_Crocodile_13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 30%;
+    right: 0;
+    float: left;
+    margin-left: 20px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    border: none
+}

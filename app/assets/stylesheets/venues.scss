@@ -7,8 +7,8 @@ img {
 }
 
 .divider {
-    border-top: 8px solid lightgray;
-    border-radius: 5px;
+    border-top: 4px solid cornflowerblue;
+    border-radius: 3px;
 }
 
 .comment_divider {
@@ -16,7 +16,9 @@ img {
 }
 
 .comment_container {
-    border: solid blue 2px;
+    border: none;
+    padding: 10px;
+    background: lightgray;
     text-align: left;
     width: 50%;
     height: auto;
@@ -24,7 +26,7 @@ img {
 }
 
 .image_container {
-    border: solid blue 5px;
+    border: none;
     height: 300px;
     width: 500px;
     object-fit: cover;

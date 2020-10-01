@@ -15,7 +15,7 @@ h1 {
 }
 
 .divider {
-    border-top: 8px solid lightgray;
+    border-top: 8px solid yellow;
     border-radius: 5px;
 }
 
@@ -24,8 +24,11 @@ h1 {
 }
 
 .comment_container {
-    border: solid blue 5px;
-    height: 300px;
-    width: 500px;
+    border: none;
+    padding: 10px;
+    background: lightgray;
+    text-align: left;
+    width: 50%;
+    height: auto;
     object-fit: cover;
 }
