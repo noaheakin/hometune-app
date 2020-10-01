@@ -15,6 +15,8 @@
 <% @concerts.each do |concert| %>
     <h2><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h2>
     <h3><%= concert.display_date %></h3>
+    <h3>Genre: <%= concert.artist.genre %></h3>
+    <h3>Location: <%= concert.venue.location %></h3>
     <hr class="divider" width="508px" align="left" ><br>
 <% end %>
     
