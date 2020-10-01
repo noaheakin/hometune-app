@@ -4,15 +4,34 @@ class VenuesController < ApplicationController
 
     def index
         @venues = Venue.all 
+        #@options_array = ["alphabetical", "rose"]
     end
 
     def show
     end
 
-    def button
+    def alphabetized_button
         @venues = Venue.all
         @venues = @venues.alphabetized
-        redirect_to venues_path
+        render "index"
+    end
+
+    def most_popular_button
+        @venues = Venue.all
+        @venues = @venues.most_popular
+        render "index"
+    end
+
+    def most_popular_button
+        @venues = Venue.all
+        @venues = @venues.most_popular
+        render "index"
+    end
+
+    def most_popular_button
+        @venues = Venue.all
+        @venues = @venues.most_popular
+        render "index"
     end
 
     private
