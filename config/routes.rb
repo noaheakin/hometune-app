@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   delete "logout", to: "login#destroy", as: "log_out"
   get "homepage", to: "homepage#index", as: "hometune"
 
+  post "button", to: "venues#button", as: "button"
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

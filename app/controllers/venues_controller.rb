@@ -9,6 +9,12 @@ class VenuesController < ApplicationController
     def show
     end
 
+    def button
+        @venues = Venue.all
+        @venues = @venues.alphabetized
+        redirect_to venues_path
+    end
+
     private
 
     def venue_params

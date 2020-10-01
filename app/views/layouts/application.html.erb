@@ -11,10 +11,10 @@
 
   <body>
   <% if @logged_in %>
-    Welcome, <%= @user.username %>!
-    <%= button_to "Log out", log_out_path, method: :delete%>
+    <p>Welcome, <%= @user.username %>!</p>
     <button><%= link_to "Main Page", hometune_path%></button>
-    <button><%= link_to "Profile", user_path(@user)%></button>
+    <button><%= link_to "Profile", user_path(@user)%></button><br><br>
+    <%= button_to "Log out", log_out_path, method: :delete%><br><br>
     <%else%>
     <%= link_to "Log in", new_login_path %>
     <%= link_to "Create Profile", new_user_path %>

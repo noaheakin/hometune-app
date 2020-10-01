@@ -1,14 +1,13 @@
 <h1>Venues</h1><br><br><br>
 
+<%= button_to "Alphabetized", button_path, method: :post%><br><br>
+
 <% @venues.each do |venue| %>
     <div class="image_container">
         <img src=<%= venue.img_url %>>
     </div>
     <h2><%= link_to venue.name, venue %></h2>
-    <!--<p>Description: <%= venue.description %></p>-->
     <h4>Location: <%= venue.location %></h4>
-    <!--<h4>Capacity: %= venue.capacity %></h4>-->
-    <!--<h4>Popularity: <%= venue.popularity %></h4>-->
     <br><hr class="divider" width="500px" align="left" ><br><br>
     
 <% end %>
