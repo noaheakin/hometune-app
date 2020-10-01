@@ -9,8 +9,10 @@
     <div>@ <%= link_to concert.venue.name, venue_path(concert.venue) %></div>
     <div><%= concert.display_date %></div><br>
 <%end%>
-<h4>Comments:</h4>
 
+<button><%= link_to "Create a Comment", new_artist_comment_path %></button>
+
+<h4>Comments:</h4>
 <% @artist.most_recent_comments.each do |comment| %>
     <div><%= comment.user.username %></div>
     <div class="comment_container"><%= comment.content %></div><br>

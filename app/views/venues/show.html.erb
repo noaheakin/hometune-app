@@ -11,6 +11,9 @@
     <div><%= concert.display_date %></div><br>
 <%end%>
 
+<button><%= link_to "Create a Comment", new_venue_comment_path %></button>
+
+<h4>Comments:</h4>
 <% @venue.most_recent_comments.each do |comment| %>
     <div><%= comment.user.username %></div>
     <div><%= comment.content %></div><br>

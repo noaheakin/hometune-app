@@ -10,10 +10,19 @@ class ArtistCommentsController < ApplicationController
 
     def new
         @artist_comment = ArtistComment.new
+        @artists = Artist.all
     end
 
     def create
-        @artist_comment = ArtistComment.create(artist_comment_params)
+        @artist_comment = ArtistComment.new(artist_comment_params)
+        @artist_comment.user_id = session[:user_id]
+        @artist_comment.save
+        if @artist_comment.valid?
+            redirect_to artist_path(@artist_comment.artist)
+        else
+            flash[:errors] = @artist_comment.errors.full_messages
+            redirect_to new_artist_comment_path
+        end
     end
 
     private

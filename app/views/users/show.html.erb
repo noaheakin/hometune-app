@@ -1,4 +1,4 @@
-<h1>Welcome <%= @user.username%>! </h1>
+<h1>Hello <%= @user.username%>! </h1>
 <%= @user.bio %>
-<%= button_to "Edit", edit_user_path(@user) %>
-<h2><%= link_to "Back to Main", homepage_path %></h2>
+<button><%= link_to "Edit", edit_user_path(@user) %></button>
+<h2><%= link_to "Back to Main", hometune_path %></h2>
