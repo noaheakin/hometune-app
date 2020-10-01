@@ -40,6 +40,4 @@ class Venue < ApplicationRecord
         self.all.sort_by(&:capacity)
     end
 
-    #could use longest/shortest description. add year open attribute if needed
-
 end

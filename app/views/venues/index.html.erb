@@ -1,6 +1,15 @@
 <h1>Venues</h1><br><br><br>
 
-<%= button_to "Alphabetized", button_path, method: :post%><br><br>
+<%= button_to "Alphabetized", alphabetized_venue_button_path, method: :post%>
+
+
+<%= button_to "Most Popular", most_popular_venue_button_path, method: :post%>
+<%= button_to "Least Popular", button_path, method: :post%>
+<%= button_to "Most Popular", button_path, method: :post%>
+<%= button_to "Location", button_path, method: :post%>
+<%= button_to "Highest Capacity", button_path, method: :post%>
+<%= button_to "Lowest Capacity", button_path, method: :post%>
+
 
 <% @venues.each do |venue| %>
     <div class="image_container">
