@@ -1,6 +1,27 @@
 // Place all the styles related to the Artists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+* {
+    background: lightsteelblue
+}
+h1 {
+	display: inline;
+	position: relative;
+	font: 80px Helvetica, Sans-Serif;
+	letter-spacing: -5px;
+    color: orange; 
+    text-align: center;
+    text-shadow: 5px 5px black;
+}
+
+.divider {
+    border-top: 8px solid lightgray;
+    border-radius: 5px;
+}
+
+.comment_divider {
+    border-top: 1px solid lightgray;
+}
 
 .comment_container {
     border: solid blue 5px;
