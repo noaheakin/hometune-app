@@ -5,8 +5,17 @@ body {
     background: lightsteelblue
 }
 
+a {
+    color:rgb(255, 102, 0);
+}
+
+a:hover {
+    color:rgb(255, 60, 0);
+}
+
+
 button {
-    background: gray;
+    background: rgb(129, 147, 170);
 }
 h1 {
 	display: inline;
