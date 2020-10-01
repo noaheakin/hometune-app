@@ -4,18 +4,23 @@
 <h4>Location: <%= @venue.location %></h4>
 <h4>Capacity: <%= @venue.capacity %></h4>
 <h4>Popularity: <%= @venue.popularity %></h4>
-<img src=<%= @venue.img_url %>alt=<%=@venue.name%> + "interior"><br><br>
-<h3>Upcoming Shows:</h3>
+<img src=<%= @venue.img_url %>><br><br>
+
+<h2>Upcoming Shows:</h2>
+
 <% @venue.concerts.each do |concert| %>
-    <div>@ <%= link_to concert.artist.name, artist_path(concert.artist) %></div>
-    <div><%= concert.display_date %></div><br>
+    <div><strong> <%= link_to concert.artist.name, artist_path(concert.artist) %></strong></div>
+    <div><%= concert.display_date %></div>
+    <hr class="divider" width="30%" align="left">
 <%end%>
 
 <button><%= link_to "Create a Comment", new_venue_comment_path %></button>
 
-<h4>Comments:</h4>
+<br><h3>Comments:</h3>
+
 <% @venue.most_recent_comments.each do |comment| %>
-    <div><%= comment.user.username %></div>
-    <div><%= comment.content %></div><br>
+    <div class="comment_container"><%= comment.content %></div>
+    <div>Posted by: <%= comment.user.username %></div>
+    <br><hr class="comment_divider" width="50%" align="left"><br>
 <%end%>
 

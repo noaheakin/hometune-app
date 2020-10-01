@@ -1,7 +1,8 @@
-<h1>Concerts</h1>
+<h1>Concerts</h1><br><br><br>
 
 <% @concerts.each do |concert| %>
-    <h4><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h4>
-    <h2><%= concert.display_date %></h2>
+    <h2><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h2>
+    <h3><%= concert.display_date %></h3>
+    <hr class="divider" width="508px" align="left" ><br>
 <% end %>
     

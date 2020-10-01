@@ -1,10 +1,12 @@
-<h1>Artists</h1>
+<h1>Artists</h1><br><br><br>
 
 <% @artists.each do |artist| %>
-    <h2><%= link_to artist.name, artist %></h2>
-    <h4>Genre: <%= artist.genre %></h4>
     <div class="image_container">
-        <img src=<%= artist.img_url %>><br><br>
+        <img src=<%= artist.img_url %>>
     </div>
+    <h2><%= link_to artist.name, artist %></h2>
+    <h3>Genre: <%= artist.genre %></h3>
+    <br><hr class="divider" width="500px" align="left" ><br><br>
+    
 <% end %>
 
