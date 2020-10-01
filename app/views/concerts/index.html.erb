@@ -1,6 +1,7 @@
 <h1>Concerts</h1><br><br><br>
 
 <h3>Sort by:</h3>
+<div class="concert_sort_options">
 <%= button_to "Venue", by_venue_concert_button_path, method: :post%>
 <%= button_to "Popular Venue", by_popular_venue_concert_button_path, method: :post%>
 <%= button_to "Artist", by_artist_concert_button_path, method: :post%>
@@ -10,7 +11,8 @@
 <%= button_to "21+", by_twenty_one_and_up_concert_button_path, method: :post%>
 <%= button_to "Under 21", by_under_twenty_one_concert_button_path, method: :post%>
 <%= button_to "Location", by_location_concert_button_path, method: :post%>
-<%= button_to "Genre", by_genre_concert_button_path, method: :post%><br><br>
+<%= button_to "Genre", by_genre_concert_button_path, method: :post%>
+</div><br><br>
 
 <% @concerts.each do |concert| %>
     <h2><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h2>

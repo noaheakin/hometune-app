@@ -1,13 +1,14 @@
 <h1>Venues</h1><br><br><br>
 
 <h3>Sort by:</h3>
+<div class="venue_sort_options">
 <%= button_to "Alphabetized", alphabetized_venue_button_path, method: :post%>
 <%= button_to "Most Popular", most_popular_venue_button_path, method: :post%>
 <%= button_to "Least Popular", least_popular_venue_button_path, method: :post%>
 <%= button_to "Location", by_location_venue_button_path, method: :post%>
 <%= button_to "Highest Capacity", highest_capacity_button_path, method: :post%>
-<%= button_to "Lowest Capacity", lowest_capacity_button_path, method: :post%><br><br>
-
+<%= button_to "Lowest Capacity", lowest_capacity_button_path, method: :post%>
+</div><br><br>
 
 <% @venues.each do |venue| %>
     <div class="image_container">
