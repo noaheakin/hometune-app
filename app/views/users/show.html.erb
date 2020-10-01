@@ -1,4 +1,8 @@
-<h1>Hello <%= @user.username%>! </h1>
-<%= @user.bio %>
+<h2 style="color:navy;">Hello, <%= @user.username%>! </h2>
+<hr class="divider" width="30%" align="left">
+<h3>Bio:</h3>
+<div class="bio_container">
+    <%= @user.bio %>
+</div><br>
 <button><%= link_to "Edit", edit_user_path(@user) %></button>
-<h2><%= link_to "Back to Main", hometune_path %></h2>
+<!--<h2><%= link_to "Back to Main", hometune_path %></h2>-->

@@ -36,3 +36,10 @@ img {
     width: 100%;
     height: 100%;
 }
+
+.venue_pic {
+    border: none;
+    height: 500px;
+    width: 833px;
+    object-fit: cover;
+}

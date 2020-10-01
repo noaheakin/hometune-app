@@ -1,4 +1,5 @@
-<h2><%= link_to @concert.artist.name, artist_path(@concert.artist) %></h2>
-<h2><%= link_to @concert.venue.name, venue_path(@concert.venue) %></h2>
+<h2><%= link_to @concert.artist.name, artist_path(@concert.artist) %> @ <%= link_to @concert.venue.name, venue_path(@concert.venue) %></h2>
+<!--<h2><%= link_to @concert.venue.name, venue_path(@concert.venue) %></h2>-->
+<img class="concert_pic" src=<%= @concert.artist.img_url %>><br><br>
 <h4>Date: <%= @concert.display_date %></h4>
 <h4>21+: <%= @concert.twenty_one_and_up %></h4>
