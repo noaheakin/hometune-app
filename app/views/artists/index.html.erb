@@ -1,5 +1,10 @@
 <h1>Artists</h1><br><br><br>
 
+<%= button_to "Alphabetized", alphabetized_artist_button_path, method: :post%>
+<%= button_to "Most Popular", most_popular_artist_button_path, method: :post%>
+<%= button_to "Least Popular", least_popular_artist_button_path, method: :post%>
+<%= button_to "Genre", by_genre_artist_button_path, method: :post%>
+
 <% @artists.each do |artist| %>
     <div class="image_container">
         <img src=<%= artist.img_url %>>

@@ -8,6 +8,30 @@ class ArtistsController < ApplicationController
     def show
     end
 
+    def alphabetized_artist_button
+        @artists = Artist.all
+        @artists = @artists.alphabetized
+        render "index"
+    end
+
+    def most_popular_artist_button
+        @artists = Artist.all
+        @artists = @artists.most_popular
+        render "index"
+    end
+
+    def least_popular_artist_button
+        @artists = Artist.all
+        @artists = @artists.least_popular
+        render "index"
+    end
+
+    def by_genre_artist_button
+        @artists = Artist.all
+        @artists = @artists.by_genre
+        render "index"
+    end
+
 
     private
 
