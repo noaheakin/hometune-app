@@ -10,27 +10,39 @@ class VenuesController < ApplicationController
     def show
     end
 
-    def alphabetized_button
+    def alphabetized_venue_button
         @venues = Venue.all
         @venues = @venues.alphabetized
         render "index"
     end
 
-    def most_popular_button
+    def most_popular_venue_button
         @venues = Venue.all
         @venues = @venues.most_popular
         render "index"
     end
 
-    def most_popular_button
+    def least_popular_venue_button
         @venues = Venue.all
-        @venues = @venues.most_popular
+        @venues = @venues.least_popular
         render "index"
     end
 
-    def most_popular_button
+    def by_location_venue_button
         @venues = Venue.all
-        @venues = @venues.most_popular
+        @venues = @venues.by_location
+        render "index"
+    end
+
+    def highest_capacity_button
+        @venues = Venue.all
+        @venues = @venues.highest_capacity
+        render "index"
+    end
+
+    def lowest_capacity_button
+        @venues = Venue.all
+        @venues = @venues.lowest_capacity
         render "index"
     end
 
