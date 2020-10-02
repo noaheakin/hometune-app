@@ -1,8 +1,11 @@
 <br><br><h1><%= @artist.name %></h1><br><br>
 
-<h4>Genre: <%= @artist.genre %></h4>
-<h4>Bio: <%= @artist.bio %></h4>
-<h4>Popularity: <%= @artist.popularity %></h4>
+<div class="comment_container">
+    <h3>"<%= @artist.bio %>"</h4>
+    <h4>Genre: <%= @artist.genre %></h4>
+    <h4>Popularity: <%= @artist.popularity %></h4>
+</div><br>
+
 <img class="artist_pic" src=<%= @artist.img_url %>><br><br>
 
 <h2 style="font-size:40px">Upcoming Shows:</h2>

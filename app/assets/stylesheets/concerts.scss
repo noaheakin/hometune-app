@@ -11,4 +11,17 @@
 
 .concert_sort_options {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.concert_comment_container {
+    border: none;
+    padding: 8px;
+    background-color: rgb(221, 230, 241);
+    text-align: center;
+    width: 50%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
 }

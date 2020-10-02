@@ -1,9 +1,12 @@
 <br><br><h1><%= @venue.name %></h1><br><br>
 
-<p>Description: <%= @venue.description %></p>
-<h4>Location: <%= @venue.location %></h4>
-<h4>Capacity: <%= @venue.capacity %></h4>
-<h4>Popularity: <%= @venue.popularity %></h4>
+<div class="comment_container">
+    <h3>"<%= @venue.description %>"</h3>
+    <h4>Location: <%= @venue.location %></h4>
+    <h4>Capacity: <%= @venue.capacity %></h4>
+    <h4>Popularity: <%= @venue.popularity %></h4>
+</div><br>
+
 <img class="venue_pic" src=<%= @venue.img_url %>><br><br>
 
 <h2 style="font-size:40px">Upcoming Shows:</h2>

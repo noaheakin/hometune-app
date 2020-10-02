@@ -1,6 +1,6 @@
-<br><br><h1>Concerts</h1><br><br>
+<h1 class="artist_label">Concerts</h1><br><br>
 
-<h3>Sort by:</h3>
+<h3 class="sort_bar">Sort by:</h3>
 <div class="concert_sort_options">
 <%= button_to "Venue", by_venue_concert_button_path, method: :post%>
 <%= button_to "Popular Venue", by_popular_venue_concert_button_path, method: :post%>
@@ -15,10 +15,11 @@
 </div><br><br>
 
 <% @concerts.each do |concert| %>
-    <h2><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h2>
-    <h3><%= concert.display_date %></h3>
-    <h3>Genre: <%= concert.artist.genre %></h3>
-    <h3>Location: <%= concert.venue.location %></h3>
-    <hr class="divider" width="508px" align="left" ><br>
+    <div class="concert_comment_container">
+        <h2><%= link_to "#{concert.artist.name} at #{concert.venue.name}", concert_path(concert) %></h2>
+        <h3><%= concert.display_date %></h3>
+        <h3>Genre: <%= concert.artist.genre %></h3>
+        <h3>Location: <%= concert.venue.location %></h3>
+    </div><br>
 <% end %>
     

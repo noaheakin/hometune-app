@@ -77,4 +77,12 @@ class Concert < ApplicationRecord
         end
     end
 
+    def all_ages?
+        if self.twenty_one_and_up
+            "21+ only"
+        else
+            "All ages"
+        end
+    end
+
 end
