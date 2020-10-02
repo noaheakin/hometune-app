@@ -21,6 +21,8 @@ img {
 .image_container img {
     width: 100%;
     height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .venue_pic {
@@ -28,6 +30,7 @@ img {
     height: 500px;
     width: 833px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .venue_sort_options {
