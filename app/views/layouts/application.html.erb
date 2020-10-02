@@ -11,16 +11,23 @@
 
   <body>
   <% if @logged_in %>
-    <div class="user_panel">
-    <p><strong>Current user: <%= @user.username %></strong></p>
-    <button class="perma_buttons"><%= link_to "Main Page", hometune_path%></button>
-    <button class="perma_buttons"><%= link_to "Profile", user_path(@user)%></button><br><br>
-    <%= button_to "Log out", log_out_path, method: :delete%><br><br>
+    <div class="top_bar">
+      <div class="user_panel">
+        <p><strong>Current user: <%= @user.username %></strong></p>
+        <button class="perma_buttons"><%= link_to "Main Page", hometune_path%></button>
+        <button class="perma_buttons"><%= link_to "Profile", user_path(@user)%></button><br><br>
+        <%= button_to "Log out", log_out_path, method: :delete%><br><br>
+      </div>
+      <div class="title_image">HomeTune</div>
+      <div class="empty_right">
+      </div>
     </div>
   <%else%>
     <button class="perma_buttons"><%= link_to "Log in", new_login_path %></button>
     <button class="perma_buttons"><%= link_to "Create User", new_user_path %></button>
   <%end%>
+
+  
 
     <%= yield %>
   </body>

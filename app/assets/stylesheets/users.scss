@@ -19,7 +19,16 @@
     text-decoration: none;
 }
 
+.top_bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .user_panel {
+    order: 1;
+    margin-right: auto;
     background-color: rgb(221, 230, 241);
     padding-left: 6px;
     padding-right: 6px;
@@ -27,4 +36,37 @@
     height: 125px;
     border: 1px solid gray;
     border-radius: 5px;
+}
+
+.title_image {
+    order: 2;
+    background-image: url(https://www.uokpl.rs/fpng/f/273-2732135_seattle-decal-hd.png);
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: center bottom;
+    background-color: rgb(221, 230, 241);
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(58, 58, 133);
+    padding-bottom: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 3px 3px lightsteelblue;
+    z-index: -1;
+    border: 5px solid rgb(58, 58, 133);  
+}
+
+.empty_right {
+    order: 3;
+    margin-left: auto;
+    background-color: rgb(221, 230, 241);
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 142px;
+    height: 125px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    visibility: hidden;
 }

@@ -1,6 +1,6 @@
 <h2>New comment on an artist</h2>
 <%= form_for @artist_comment do |f| %>
-    <%= f.collection_select :artist_id, @artists, :id, :name%><br><br>
+    <%= f.collection_select :artist_id, @artists.alphabetized, :id, :name%><br><br>
     <%= f.label "Content:"%><br>
     <%= f.text_field :content%><br><br>
     <%= f.submit %>
