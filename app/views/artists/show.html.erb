@@ -8,19 +8,21 @@
 <h2 style="font-size:40px">Upcoming Shows:</h2>
 
 <% @artist.concerts.each do |concert| %>
-    <h3 style="font-size:30px"><strong><%= link_to "@ #{concert.venue.name}", venue_path(concert.venue) %></strong></h3>
-    <h3><%= concert.display_date %></h3>
-    <hr class="divider" width="30%" align="left">
+    <div class="comment_container">
+        <h3 style="font-size:30px"><strong><%= link_to "@ #{concert.venue.name}", venue_path(concert.venue) %></strong></h3>
+        <h3><%= concert.display_date %></h3>
+    </div><br>
 <%end%>
 
 
 
 <br><h2>Comments:</h2>
 <% @artist.most_recent_comments.each do |comment| %>
-    <div class="comment_container"><%= comment.content %></div>
-    <p><strong>--- Posted by: <%= comment.user.username %></strong></p>
-    <hr class="comment_divider" width="50%" align="left"><br>
+    <div class="comment_container">
+        <p><%= comment.content %></p>
+    </div>
+    <p><strong>--- Posted by: <%= comment.user.username %></strong></p><br>  
 <%end%>
 
-<button class="perma_buttons"><%= link_to "Create a Comment", new_artist_comment_path %></button>
+<button class="perma_buttons"><%= link_to "Create a Comment", new_artist_comment_path %></button><br><br>
 

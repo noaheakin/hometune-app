@@ -10,6 +10,22 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    color: rgb(16, 16, 80);
+}
+
+h3 {
+    color: rgb(16, 16, 80);
+}
+
+h4 {
+    color: rgb(16, 16, 80);
+}
+
+p {
+    color: rgb(16, 16, 80);
+}
+
 h2 a {
     font-size: 35px;
 }
@@ -38,13 +54,13 @@ h1 {
 }
 
 .comment_divider {
-    border-top: 1px solid lightgray;
+    border-top: 1px solid rgb(221, 230, 241);
 }
 
 .comment_container {
     border: none;
-    padding: 10px;
-    background: lightgray;
+    padding: 8px;
+    background-color: rgb(221, 230, 241);
     text-align: left;
     width: 50%;
     height: auto;
@@ -74,6 +90,8 @@ h1 {
 
 .sort_bar {
    text-align: center;
+   margin-top: 0;
+   margin-bottom: 6px;
 }
 
 .flex {

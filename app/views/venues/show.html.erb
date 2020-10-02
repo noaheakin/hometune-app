@@ -1,4 +1,4 @@
-<h1><%= @venue.name %></h1>
+<br><br><h1><%= @venue.name %></h1><br><br>
 
 <p>Description: <%= @venue.description %></p>
 <h4>Location: <%= @venue.location %></h4>
@@ -9,9 +9,10 @@
 <h2 style="font-size:40px">Upcoming Shows:</h2>
 
 <% @venue.concerts.each do |concert| %>
-    <h3 style="font-size:30px"><strong> <%= link_to concert.artist.name, artist_path(concert.artist) %></strong></h3>
-    <h3><%= concert.display_date %></h3>
-    <hr class="divider" width="30%" align="left">
+    <div class="comment_container">
+        <h3 style="font-size:30px"><strong> <%= link_to concert.artist.name, artist_path(concert.artist) %></strong></h3>
+        <h3><%= concert.display_date %></h3>
+    </div><br>
 <%end%>
 
 
@@ -19,10 +20,11 @@
 <br><h2>Comments:</h2>
 
 <% @venue.most_recent_comments.each do |comment| %>
-    <div class="comment_container"><%= comment.content %></div>
+    <div class="comment_container">
+        <p><%= comment.content %></p>
+    </div>
     <p><strong>--- Posted by: <%= comment.user.username %></strong></p>
-    <hr class="comment_divider" width="50%" align="left"><br>
 <%end%>
 
-<button class="perma_buttons"><%= link_to "Create a Comment", new_venue_comment_path %></button>
+<button class="perma_buttons"><%= link_to "Create a Comment", new_venue_comment_path %></button><br><br>
 
