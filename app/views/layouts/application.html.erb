@@ -11,13 +11,15 @@
 
   <body>
   <% if @logged_in %>
-    <p>--- Welcome, <%= @user.username %>! ---</p>
+    <div class="user_panel">
+    <p><strong>Current user: <%= @user.username %></strong></p>
     <button class="perma_buttons"><%= link_to "Main Page", hometune_path%></button>
     <button class="perma_buttons"><%= link_to "Profile", user_path(@user)%></button><br><br>
     <%= button_to "Log out", log_out_path, method: :delete%><br><br>
-    <%else%>
-    <%= link_to "Log in", new_login_path %>
-    <%= link_to "Create Profile", new_user_path %>
+    </div>
+  <%else%>
+    <button class="perma_buttons"><%= link_to "Log in", new_login_path %></button>
+    <button class="perma_buttons"><%= link_to "Create User", new_user_path %></button>
   <%end%>
 
     <%= yield %>

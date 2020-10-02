@@ -1,6 +1,6 @@
-<h1>Venues</h1><br><br><br>
+<h1 class="artist_label">Venues</h1><br><br><br>
 
-<h3>Sort by:</h3>
+<h3 class="sort_bar">Sort by:</h3>
 <div class="venue_sort_options">
 <%= button_to "Alphabetized", alphabetized_venue_button_path, method: :post%>
 <%= button_to "Most Popular", most_popular_venue_button_path, method: :post%>
@@ -19,7 +19,8 @@
             </div>
             <div>
                 <h2><strong><%= link_to venue.name, venue %></strong></h2>
-                <h2><strong>Location: <%= venue.location %></strong></h2>
+                <h2><strong><%= venue.location %></strong></h2>
+                <h3><strong>"<%= venue.description %>"</strong></h3>
             </div>
         </figure>
     </div>

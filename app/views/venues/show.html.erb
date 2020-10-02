@@ -6,21 +6,23 @@
 <h4>Popularity: <%= @venue.popularity %></h4>
 <img class="venue_pic" src=<%= @venue.img_url %>><br><br>
 
-<h2>Upcoming Shows:</h2>
+<h2 style="font-size:40px">Upcoming Shows:</h2>
 
 <% @venue.concerts.each do |concert| %>
-    <div><strong> <%= link_to concert.artist.name, artist_path(concert.artist) %></strong></div>
-    <div><%= concert.display_date %></div>
+    <h3 style="font-size:30px"><strong> <%= link_to concert.artist.name, artist_path(concert.artist) %></strong></h3>
+    <h3><%= concert.display_date %></h3>
     <hr class="divider" width="30%" align="left">
 <%end%>
 
-<button><%= link_to "Create a Comment", new_venue_comment_path %></button>
 
-<br><h3>Comments:</h3>
+
+<br><h2>Comments:</h2>
 
 <% @venue.most_recent_comments.each do |comment| %>
     <div class="comment_container"><%= comment.content %></div>
-    <div>Posted by: <%= comment.user.username %></div>
-    <br><hr class="comment_divider" width="50%" align="left"><br>
+    <p><strong>--- Posted by: <%= comment.user.username %></strong></p>
+    <hr class="comment_divider" width="50%" align="left"><br>
 <%end%>
+
+<button class="perma_buttons"><%= link_to "Create a Comment", new_venue_comment_path %></button>
 

@@ -1,24 +1,26 @@
-<h1><%= @artist.name %></h1>
+<br><br><h1><%= @artist.name %></h1><br><br>
 
 <h4>Genre: <%= @artist.genre %></h4>
 <h4>Bio: <%= @artist.bio %></h4>
 <h4>Popularity: <%= @artist.popularity %></h4>
 <img class="artist_pic" src=<%= @artist.img_url %>><br><br>
 
-<h2>Upcoming Shows:</h2>
+<h2 style="font-size:40px">Upcoming Shows:</h2>
 
 <% @artist.concerts.each do |concert| %>
-    <div><strong><%= link_to "@ #{concert.venue.name}", venue_path(concert.venue) %></strong></div>
-    <div><%= concert.display_date %></div>
+    <h3 style="font-size:30px"><strong><%= link_to "@ #{concert.venue.name}", venue_path(concert.venue) %></strong></h3>
+    <h3><%= concert.display_date %></h3>
     <hr class="divider" width="30%" align="left">
 <%end%>
 
-<button><%= link_to "Create a Comment", new_artist_comment_path %></button>
 
-<br><h3>Comments:</h3>
+
+<br><h2>Comments:</h2>
 <% @artist.most_recent_comments.each do |comment| %>
     <div class="comment_container"><%= comment.content %></div>
-    <div><%= comment.user.username %></div>
-    <br><hr class="comment_divider" width="50%" align="left"><br>
+    <p><strong>--- Posted by: <%= comment.user.username %></strong></p>
+    <hr class="comment_divider" width="50%" align="left"><br>
 <%end%>
+
+<button class="perma_buttons"><%= link_to "Create a Comment", new_artist_comment_path %></button>
 

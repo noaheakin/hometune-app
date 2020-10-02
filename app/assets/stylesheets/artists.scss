@@ -60,19 +60,27 @@ h1 {
 
 .artist_sort_options {
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.artist_bio {
-
+.artist_label {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-
+.sort_bar {
+   text-align: center;
+}
 
 .flex {
     margin: 0;
     display: flex;
-    border: 5px solid rgb(84, 92, 128);
     margin-bottom: 2rem;
+    background-color: rgb(221, 230, 241);
 }
 
 .flex div:first-child {

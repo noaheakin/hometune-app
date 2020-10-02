@@ -46,4 +46,14 @@ img {
 
 .venue_sort_options {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.venue_label {
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
