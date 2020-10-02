@@ -11,12 +11,18 @@
 </div><br><br>
 
 <% @venues.each do |venue| %>
-    <div class="image_container">
-        <img src=<%= venue.img_url %>>
+    <div class="venue_profile">
+        <figure class="flex">
+            <div></div>
+            <div class="image_container">
+                <img src=<%= venue.img_url %>>
+            </div>
+            <div>
+                <h2><strong><%= link_to venue.name, venue %></strong></h2>
+                <h2><strong>Location: <%= venue.location %></strong></h2>
+            </div>
+        </figure>
     </div>
-    <h2><%= link_to venue.name, venue %></h2>
-    <h4>Location: <%= venue.location %></h4>
-    <br><hr class="divider" width="500px" align="left" ><br><br>
     
 <% end %>
     

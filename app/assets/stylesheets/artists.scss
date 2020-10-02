@@ -7,6 +7,11 @@ body {
 
 a {
     color:rgb(255, 102, 0);
+    text-decoration: none;
+}
+
+h2 a {
+    font-size: 35px;
 }
 
 a:hover {
@@ -24,7 +29,7 @@ h1 {
 	letter-spacing: -5px;
     color: orange; 
     text-align: center;
-    text-shadow: 5px 5px black;
+    text-shadow: 3px 3px gold;
 }
 
 .divider {
@@ -56,3 +61,45 @@ h1 {
 .artist_sort_options {
     display: flex;
 }
+
+.artist_bio {
+
+}
+
+
+
+.flex {
+    margin: 0;
+    display: flex;
+    border: 5px solid rgb(84, 92, 128);
+    margin-bottom: 2rem;
+}
+
+.flex div:first-child {
+    flex: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.flex div:last-child {
+    margin: 2rem;
+    flex: 2;
+}
+
+.flex h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.flex h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.flex h3:last-of-type {
+    margin-bottom: 0;
+}
+
+  

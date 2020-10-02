@@ -9,12 +9,19 @@
 </div><br><br>
 
 <% @artists.each do |artist| %>
-    <div class="image_container">
-        <img src=<%= artist.img_url %>>
+    <div class="artist_profile">
+        <figure class="flex">
+            <div></div>
+            <div class="image_container">
+                <img src=<%= artist.img_url %>>
+            </div>
+            <div>
+                <h2><strong><%= link_to artist.name, artist %></strong></h2>
+                <h2><strong>Genre: <%= artist.genre %></strong></h2>
+                <h3 class="artist_bio"><strong>"<%= artist.bio %>"</strong></h3>
+            </div>
+        </figure>
     </div>
-    <h2><%= link_to artist.name, artist %></h2>
-    <h3>Genre: <%= artist.genre %></h3>
-    <br><hr class="divider" width="500px" align="left" ><br><br>
     
 <% end %>
 
